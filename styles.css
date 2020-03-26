@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+li {
+    display: inline;
+  }
+.menu-container{
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu{
+    border:1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    border:1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login{
+    margin-left: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+
+}
+.login :hover{
+    background-color: lightblue;
+    color: white;
+}
+.border{
+    width: 500px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+  
+}
+   
+.row{
+display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+  
+}
+
+.lefto{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    display: inline-block;
+    justify-content: center;
+
+}
+.button:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+.center{
+    position: relative;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.lefto:hover .overlayleft{
+    width: 100%;
+}
+.lefto:hover .overlay{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 1;
+    background-color: lightblue;
+}
+.overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #eee;
+
+}
+.text {
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50% );
+    font-size: 20px;
+    right: 30px;
+
+}
+.overlayleft {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+@keyframes slider {
+    0% {
+        left:0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: 200%;
+
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+    
+#slider {
+        overflow:hidden;
+    }
+   
+   
+ #slider figure img{
+        width:20%;
+        float: left;
+    }
+#slider figure {
+        position: relative;
+        width: 500% ;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+
+    .morter {
+        
+        border-style: solid;
+        background-color: red;
+        border-width: 5px 5px;
+        margin-top: auto;
+        
+    }
+
+    /* .align{ */
+        /* text-align: right; */
+    /* } */
+
+    /* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 60px;
+    top: 20px;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .nav-border {
+    border-style: solid;
+    background-color: black;
+    border-width: 5px 5px;
+    margin-top: auto;
+    
+
+  }
+
+  
